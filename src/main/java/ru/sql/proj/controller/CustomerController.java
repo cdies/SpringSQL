@@ -14,6 +14,8 @@ import java.util.Collection;
 @RequestMapping("/api/customer")
 public class CustomerController {
 
+    private static final Logger LOG = LoggerFactory.getLogger(CustomerController.class);
+
     @Autowired
     private OrderService orderService;
 
