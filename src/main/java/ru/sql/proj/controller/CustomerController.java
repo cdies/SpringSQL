@@ -27,6 +27,7 @@ public class CustomerController {
     @RequestMapping(method = RequestMethod.GET)
     @ResponseBody
     Collection<Order> get() throws Exception {
+        LOG.info("Start procedure!!!");
         Collection<Order> customers = orderService.exportChanges();
         LOG.info("Testing logstash!!!!" + mapper.writeValueAsString(customers));
         return customers;
