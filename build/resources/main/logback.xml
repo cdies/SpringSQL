@@ -2,7 +2,7 @@
 <configuration scan="true" debug="true">
     <jmxConfigurator />
     <appender name="stash" class="net.logstash.logback.appender.LogstashTcpSocketAppender">
-        <destination>localhost:9650</destination>
+        <destination>10.0.2.11:9650</destination>
         <encoder class="net.logstash.logback.encoder.LogstashEncoder"/>
     </appender>
 
